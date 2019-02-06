@@ -1,0 +1,11 @@
+.Page1-text {
+    font-size: calc(1px + 1vmin)
+}
+
+a {
+    font-size: calc(10px + 3vmin)
+}
+
+a:link, a:visited {
+    color: white;
+}
