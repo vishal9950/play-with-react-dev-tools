@@ -8,6 +8,7 @@ import Page1 from './tutorialPages/Page1/Page1';
 import Page3 from './tutorialPages/Page3/Page3';
 import Page4 from './tutorialPages/Page4/Page4';
 import Page5 from './tutorialPages/Page5/Page5';
+import Page6 from './tutorialPages/Page6/Page6';
 
 class App extends Component {
   constructor(props) {
@@ -47,6 +48,7 @@ class App extends Component {
           {this.state.page === 3 ? <Page3 /> : null}
           {this.state.page === 4 ? <Page4 /> : null}
           {this.state.page === 5 ? <Page5 /> : null}
+          {this.state.page === 6 ? <Page6 /> : null}
           <div>
           <button onClick={this.goForward} className="App-nav-button"><img src={right_arrow} alt="back" /></button>
         </div>
