@@ -6,6 +6,7 @@ import right_arrow from './assets/icons/right-arrow.png';
 import left_arrow from './assets/icons/left-arrow.png';
 import Page1 from './tutorialPages/Page1/Page1';
 import Page3 from './tutorialPages/Page3/Page3';
+import Page4 from './tutorialPages/Page4/Page4';
 
 class App extends Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class App extends Component {
           {this.state.page === 1 ? <Page1 /> : null}
           {this.state.page === 2 ? <Page2 /> : null}
           {this.state.page === 3 ? <Page3 /> : null}
+          {this.state.page === 4 ? <Page4 /> : null}
           <div>
           <button onClick={this.goForward} className="App-nav-button"><img src={right_arrow} alt="back" /></button>
         </div>
