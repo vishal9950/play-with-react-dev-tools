@@ -35,15 +35,15 @@ class Page7 extends React.Component {
         <div>
           <p>
             <div>
-              {'Value of current component\'s \'a\' prop\' \''}
+              {'Value of current component\'s \'a\' prop '}
               <input type="number" onChange={event => this.onChange(event, 'first')} />
             </div>
             <div>
-              {'+ Current Page no.\' \''}
+              {'+ Current Page no. '}
               <input type="number" onChange={event => this.onChange(event, 'second')} />
             </div>
             <div>
-              {'+ Page 5\'s value of \'c\' in state\' \''}
+              {'+ Page 5\'s value of \'c\' in state '}
               <input type="number" onChange={event => this.onChange(event, 'third')} />
             </div>
           </p>
