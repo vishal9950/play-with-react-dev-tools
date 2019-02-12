@@ -5,7 +5,7 @@ const answer1 = 24;
 const answer2 = 7;
 const answer3 = 8;
 
-class Page7 extends React.Component {
+class QuizPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -22,6 +22,7 @@ class Page7 extends React.Component {
     }
 
     verifyAnswer = () => {
+      console.log('wdjk');
       const { first, second, third } = this.state;
       if (first === answer1 && second === answer2 && third === answer3) {
         alert('You are correct!');
@@ -40,17 +41,20 @@ class Page7 extends React.Component {
             </div>
             <div>
               {'+ Current Page no. '}
+              <span className="Page7-textSmall">{'(Page nos. are stored in App component\'s state) '}</span>
               <input type="number" onChange={event => this.onChange(event, 'second')} />
             </div>
             <div>
-              {'+ Page 5\'s value of \'c\' in state '}
+              {'+ Page 5\'s'}
+              <span className="Page7-textSmall">(ThinkPage Component)</span>
+              {'value of \'c\' in state '}
               <input type="number" onChange={event => this.onChange(event, 'third')} />
             </div>
           </p>
-          <p><button type="submit" onClick={this.verifyAnswer}>Verify your answer</button></p>
+          <p><button type="submit" onClick={() => this.verifyAnswer()}>Verify your answer</button></p>
         </div>
       );
     }
 }
 
-export default Page7;
+export default QuizPage;

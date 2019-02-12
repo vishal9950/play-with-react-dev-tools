@@ -2,7 +2,7 @@ import React from 'react';
 import './Page6Child.css';
 import southParkMe from '../../../assets/icons/south_park_me.png';
 
-export default class Page6Child extends React.Component {
+export default class SouthParkMe extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

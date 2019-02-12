@@ -1,7 +1,7 @@
 import React from 'react';
 import './Page5.css';
 
-class Page5 extends React.Component {
+class ThinkPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,4 +19,4 @@ class Page5 extends React.Component {
     );
   }
 }
-export default Page5;
+export default ThinkPage;

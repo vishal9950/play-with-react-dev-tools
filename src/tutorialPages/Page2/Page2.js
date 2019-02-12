@@ -2,7 +2,7 @@ import React from 'react';
 import './Page2.css';
 import rdtIcon from '../../assets/icons/rdt-icon.png';
 
-const Page2 = () => (
+const RDTIconPage = () => (
   <div>
     <p>
       {'Click on'}
@@ -13,4 +13,4 @@ const Page2 = () => (
   </div>
 );
 
-export default Page2;
+export default RDTIconPage;
