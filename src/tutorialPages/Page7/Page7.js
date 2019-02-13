@@ -22,7 +22,6 @@ class QuizPage extends React.Component {
     }
 
     verifyAnswer = () => {
-      console.log('wdjk');
       const { first, second, third } = this.state;
       if (first === answer1 && second === answer2 && third === answer3) {
         alert('You are correct!');
